@@ -22,7 +22,7 @@ class PuppeteerService{
             '--disable-site-isolation-trials',
           ], 
             headless: "new",
-            //executablePath: "/usr/bin/google-chrome",
+            executablePath: "/usr/bin/google-chrome",
         });
     
         this.page = await this.browser.newPage()

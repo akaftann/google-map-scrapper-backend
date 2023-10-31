@@ -1,13 +1,14 @@
-
+import dotenv from 'dotenv'
 import fetch from 'node-fetch'
+dotenv.config()
 
 class SnovioService{
 
     async  getAccessToken() {
         const params = new URLSearchParams({
             grant_type: 'client_credentials',
-            client_id: 'ee438f4ad491d4514b4a144c8b6d2c02',
-            client_secret: '89e2466b7d6c71a145bd3a3989877e4c'
+            client_id: '4bb1252a493854218ae66d7d554c9280',
+            client_secret: 'f040ca0e6ca781a67508e53cad510e58'
         });
 
         const options = {
